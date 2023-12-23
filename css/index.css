@@ -1,0 +1,276 @@
+
+input[type="text"] {
+    display: flex;
+    justify-content: end;
+     border: none;
+     outline: none; 
+     -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+     width: 209px;
+     height: 24.64px;
+     flex-shrink: 0;
+     opacity: 0.4;
+     font-size: 18px;
+     font-weight: 400;
+     margin-left: 9px;
+     vertical-align: middle;
+     font-family: "IBMPlexLight", monospace;
+    }
+input[type="text"]:hover{
+        cursor: text;
+    }
+button[type="submit"] {
+        width: 107px;
+        height: 38.08px; 
+        border: 2px solid black;
+        border-radius:8px; 
+        padding: 0px, 12px, 5px, 12px;
+        font-size: 18px;
+        margin-right: 1px;
+        color: #f3f3f3;
+        background-color: black;
+        cursor: pointer;
+        font-family: "SourceCode", monospace;
+    }
+    
+.submit:hover{
+        transform: scale(1.025);
+    }
+.submit:active{
+        transform: scale(0.98);
+    }
+.header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    color: #4520AB;
+    margin-top: 44px;
+    font-weight: 600;
+    font-family: "IBMPlexMono", monospace;;
+    letter-spacing: -3.2px;
+    font-style: normal;
+    line-height: normal;
+}
+.search {
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 86px;
+}
+.searchbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    border-radius: 14px;
+    border: 2px solid var(--bg-black, #111);
+    width: 500px;
+    height: 56px;
+    flex-shrink: 0;
+    padding-right: 8px;
+    padding-left: 21px;
+}
+.table{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-shrink: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 500px;
+    margin: auto;
+    margin-top: 60px;
+}
+.str1{
+        display: flex;
+        justify-content: center;
+        width: 500px;
+        height: 42px;
+        margin: 0;
+        
+}
+    
+.cell1, .cell2, .cell1new, .cell2new{
+        display: flex;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 40px;
+        /* text-align: start; */
+        border-color: black;
+        border-style: solid;
+        width: 250px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        font-family: "IBMPlexLight", monospace;
+        letter-spacing:-0.54px;
+        line-height: 40px;
+    
+}
+.cell1{
+    width: 250px;
+      border-width: 0 1px 0px 0px;
+      /* padding-left: 21px; */
+      background: #F0F0F0;
+      /* border-top-left-radius: 8px; */
+}
+.cell1new{
+    border-width: 1px 1px 0px 0px;
+    background: #F0F0F0;
+    /* border-bottom-left-radius: 8px; */
+}
+.cellNumb{
+        padding-left: 12px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px; 
+        letter-spacing: -0.7px;
+}
+.cellText{
+        padding-left: 37px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+}
+.cellTextNew{
+        padding-left: 37px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+}
+.cell2Text{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+}
+.cell2TextNew{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cell2{
+      border-width: 0 0px 0px 1px;
+      padding-left: 28px;
+      
+      display: flex;
+      justify-content: space-between;
+      background-color: rgb(0,0,0, 0.1);
+      /* border-top-right-radius: 8px; */
+}
+.cell2new{    
+      border-width: 1px 0px 0px 1px;
+      padding-left: 28px;
+      display: flex;
+      justify-content: space-between;
+      background-color: rgb(0,0,0, 0.1);
+      /* border-bottom-right-radius: 8px; */
+}
+.cross{
+        width: 18px;
+        height: 18px;
+        margin-top: 11px;
+        margin-right: 11px;
+}
+.cross:hover{
+    transform: scale(1.025);
+}
+.cross:active{
+    transform: scale(0.98);
+}
+.buttonAc{
+        padding: 8px 10px 8px 10px;
+        display: flex;
+        align-items: center;
+        width: 176px;
+        height: 38px;
+        border: 0;
+        border-radius: 8px;
+        gap: 12px;
+        font-size: 18px;
+        background: #ADADAD;
+        cursor: pointer;
+        font-family: "SourceCode", monospace;
+}
+.buttonAcZone{
+        display: flex;
+        justify-content: center;
+        margin-top: 66.5px;
+}
+.buttonAc:hover{
+        transform: scale(1.025);
+}
+.buttonAc:active{
+        transform: scale(0.98);
+}
+
+.tooltipBlock{
+    text-align: center;
+    position: absolute;
+    word-wrap: break-word;
+    max-width: 150px;
+    /* inline-size: 150px;
+    overflow-wrap: break-word; */
+	background: white;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.10);
+	font-size: 16px;
+    font-style: normal;
+    font-family: "IBMPlexLight", monospace;
+    font-weight: 400;
+
+    padding: 8px 16px 10px 16px;
+    margin: 10px;
+    gap: 10px;
+    border-radius: 10px;
+	line-height: 20px;
+    letter-spacing: -0.48px;
+    color: #000;
+    z-index: 100;
+}
+   
+@media (min-width: 768px) and (max-width: 1199px){
+    .header {
+        color: var(--Main-purple, #4520AB);
+        text-align: center;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -3.2px;
+    }
+    .table{
+        border-radius: 8px;
+        overflow: hidden;
+    }
+}
+
+
+@media (min-width: 200px) and (max-width: 767px){
+    .header {
+        text-align: center;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -2.52px;
+    }
+    .searchbar{
+        width: 324px;
+        height: 52px;
+    }
+    .submit {
+        height: 38px;
+    } 
+
+    .str1 {
+        width: 328px;
+    }
+   
+    .cell1, .cell2 , .cell1new, .cell2new{
+        width: 164px;
+    }
+    .table{        
+        width: 328px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+};

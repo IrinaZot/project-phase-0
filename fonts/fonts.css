@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "IBMPlexMono";
+    src: url(./IBMPlexMono-SemiBold.ttf);
+};
+
+@font-face {
+    font-family: "SourceCode";
+    src: url(./SourceCodePro-Regular.ttf);
+};
+
+@font-face {
+    font-family: "IBMPlexLight";
+    src: url(./IBMPlexMono-Light.ttf);
+};
